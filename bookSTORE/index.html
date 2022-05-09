@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-BooksWith E-BooksWithBasil </title>
+    <!--font awesome cdn Link--> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--custom css link-->
+    <linl rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
+        <style>
+            body{
+    margin:0px;
+    padding:0px;
+    font-family: 'Montserrat';
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    outline: none;
+    border: none;
+}
+input{
+    outline: none;
+    border: none;
+}
+.main{
+    width: 100%;
+    height: 768px;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:0 30 px;
+    background-color: aqua;
+    box-shadow: 2px 2px 20px blue;
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    top: opx;
+}
+nav ul{
+  display: flex; 
+  margin: 0;
+  padding: 0;
+}
+nav ul li a{
+    height: 40px;
+    line-height: 43px;
+    margin: 8px;
+    padding: 0px 7px;
+    display: flex;
+    font-size: 0.8rem;
+    text-transform:uppercase;
+    font-weight: 400;
+    color: blue;
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
+}
+nav ul li a:hover{
+    border-radius:2px ;
+    background-color:blue;
+    color: whitesmoke;
+    box-shadow: 2px 2px 20px red;
+}
+.active{
+    background-color: blue;
+    color: aliceblue;
+    box-shadow: 2px 2px 20px red;
+}
+nav .menu-btn{
+    display: none;
+}
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    left: 50%;
+    top: 50;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+.header-img{
+    width: 500px;
+    height: 400px;
+    margin: 20px;
+}
+.header-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.header-text{
+    width: 540px;
+    margin: 20px;
+}
+.header-text h1{
+    font-size: 3.5rem;
+    line-height: 55px;
+    color: pink;
+    letter-spacing: 1px;
+    font-weight:700 ;
+}
+.header-text p{
+    font-size: 1rem;
+    color: pink;
+}
+.header-text span{
+    color:aqua;
+    text-decoration: underline;
+}
+
+        </style>
+</head>
+<body background="./IMAGES/images3.jpg">
+    <section class="main">
+        <nav>
+            <a href="#" class="logo">
+                <h1 class="fas fa-book">E-BooksWithBasil</h1>
+            </a>
+           <input type="checkbox" class="menu-btn" id="menu-btn">
+           <label for="menu-btn" class="menu-icon">
+               <span class="nav-icon"></span>
+           </label>
+           <ul class="menu">
+               <li><a href="a" class="active">Home</a></li>
+               <li><a href="a">Preview</a></li>
+               <li><a href="a">Reviews</a></li>
+               <li><a href="a">Author</a></li>
+               <li><a href="a">Contact</a></li>
+           </ul>
+        </nav>
+
+        <div class="header-content">
+            <div class="header-text">
+                <h5>There Is No friend As<span>Loyal</span> As A <span>Book</span></h5>
+                <p>Welcome to basil and books family. If you in need of a good read.<br> We are her</p>
+                <a href="#" class="header-btn">PURCHASE</a>
+        </div>
+      
+    </section>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--custom js file link-->
+<script href="./store.js"></script>
+</body>
+</html>
